@@ -1,0 +1,17 @@
+.app-wrapper {
+  display: grid;
+  grid-template-rows: 55px 1fr 100px;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "mainNavbar_grid"
+    "mainContent_grid"
+    "mainFooter_grid";
+
+  background: dimgray;
+  height: 100vh;
+}
+
+.app-wrapper-content {
+  background: url("images/qwe.jpeg") center;
+  background-size: cover;
+}

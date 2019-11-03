@@ -1,0 +1,15 @@
+#mainContent {
+    grid-area: mainContent_grid;
+    display: grid;
+    justify-content: center;
+}
+
+.mainContent {
+}
+
+.form {
+    margin-top: 100px;
+    width: 400px;
+    background: gainsboro   ;
+    opacity: 0.5;
+}

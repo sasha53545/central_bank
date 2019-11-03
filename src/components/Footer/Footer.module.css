@@ -1,0 +1,8 @@
+#mainFooter {
+    grid-area: mainFooter_grid;
+}
+
+.h1 {
+    text-align: center;
+}
+
