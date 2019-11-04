@@ -4,32 +4,38 @@ import css from "./CreateBank.module.css";
 function CreateBank() {
     return (
         <header id={css.mainContent} className={css.mainContent}>
-            <form className={css.form}>
-                <div className="form-group row">
-                    <label htmlFor="inputEmail3" className="col-sm-2 col-form-label">БИК: </label>
-                    <div className="col-sm-10">
-                        <input type="email" className="form-control" id="inputEmail3" placeholder="Email"/>
+            <div className={css.formWrapper}>
+                <form>
+                    <div className="form-group row ">
+                        <label htmlFor="inputEmail3" className="col-sm-2 col-form-label">БИК: </label>
+                        <div className="col-sm-10">
+                            <input type="email" className="form-control" id="inputEmail3" placeholder="БИК"/>
+                        </div>
                     </div>
-                </div>
-                <div className="form-group row">
-                    <label htmlFor="inputPassword3" className="col-sm-2 col-form-label">Название: </label>
-                    <div className="col-sm-10">
-                        <input type="password" className="form-control" id="inputPassword3" placeholder="Password"/>
+                    <div className="form-group row">
+                        <label htmlFor="inputPassword3" className="col-sm-2 col-form-label">Название: </label>
+                        <div className="col-sm-10">
+                            <input type="password" className="form-control" id="inputPassword3" placeholder="Название"/>
+                        </div>
                     </div>
-                </div>
-                <div className="form-group row">
-                    <label htmlFor="inputEmail3" className="col-sm-2 col-form-label">Кор. счет: </label>
-                    <div className="col-sm-10">
-                        <input type="email" className="form-control" id="inputEmail3" placeholder="Email"/>
+                    <div className="form-group row">
+                        <label htmlFor="inputEmail3" className="col-sm-2 col-form-label">Корсчет: </label>
+                        <div className="col-sm-10">
+                            <input type="email" className="form-control" id="inputEmail3" placeholder="Кор. счет"/>
+                        </div>
                     </div>
-                </div>
-                <div className="form-group row">
-                    <label htmlFor="inputPassword3" className="col-sm-2 col-form-label">Адрес: </label>
-                    <div className="col-sm-10">
-                        <input type="password" className="form-control" id="inputPassword3" placeholder="Password"/>
+                    <div className="form-group row">
+                        <label htmlFor="inputPassword3" className="col-sm-2 col-form-label">Адрес: </label>
+                        <div className="col-sm-10">
+                            <input type="password" className="form-control" id="inputPassword3" placeholder="Адрес"/>
+                        </div>
                     </div>
-                </div>
-            </form>
+                    <div className={css.buttons}>
+                        <button type="submit" className="btn btn-primary button_1">Создать</button>
+                        <button type="submit" className="btn btn-primary button_2">Отмена</button>
+                    </div>
+                </form>
+            </div>
         </header>
     );
 }

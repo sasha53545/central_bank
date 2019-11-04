@@ -1,15 +1,14 @@
 #mainContent {
     grid-area: mainContent_grid;
+    height: 100%;
+}
+
+.formWrapper {
     display: grid;
     justify-content: center;
+    padding: 200px;
 }
 
-.mainContent {
-}
-
-.form {
-    margin-top: 100px;
-    width: 400px;
-    background: gainsboro   ;
-    opacity: 0.5;
+.buttons {
+    display: inline-block;
 }

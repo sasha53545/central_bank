@@ -1,7 +1,10 @@
 #mainContent {
     grid-area: mainContent_grid;
+    height: 100%;
 }
 
-.mainContent {
-
+.tableWrapper {
+    display: grid;
+    justify-content: center;
+    padding: 200px;
 }

@@ -7,11 +7,5 @@
     "mainContent_grid"
     "mainFooter_grid";
 
-  background: dimgray;
   height: 100vh;
-}
-
-.app-wrapper-content {
-  background: url("images/qwe.jpeg") center;
-  background-size: cover;
 }
