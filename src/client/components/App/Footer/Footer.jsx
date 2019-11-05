@@ -3,7 +3,7 @@ import css from "./Footer.module.css";
 
 function Footer() {
     return (
-        <footer className={css.mainFooter}>
+        <footer className={css.main_footer}>
             <h1 className={css.h1}>Footer</h1>
         </footer>
     );

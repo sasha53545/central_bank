@@ -1,9 +1,4 @@
-#mainContent {
-    grid-area: mainContent_grid;
-    height: 100%;
-}
-
-.formWrapper {
+.form_wrapper {
     display: grid;
     justify-content: center;
     padding: 200px;

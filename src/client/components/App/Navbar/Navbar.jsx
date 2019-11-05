@@ -4,7 +4,7 @@ import {NavLink} from "react-router-dom";
 
 function Navbar() {
     return (
-        <navbar id={css.mainNavbar}>
+        <navbar className={css.main_navbar}>
             <nav className="navbar navbar-expand-lg navbar-light">
                 <NavLink className="navbar-brand" to="/directoryBanks">Центральный Банк</NavLink>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
