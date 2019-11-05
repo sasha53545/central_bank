@@ -1,4 +1,5 @@
 .main_content {
+    display: flex;
     grid-area: mainContent_grid;
     height: 100%;
 }

@@ -1,9 +1,10 @@
 .form_wrapper {
-    display: grid;
+    display: flex;
     justify-content: center;
     padding: 200px;
+    height: 100vh;
 }
 
-.buttons {
-    display: inline-block;
+.form {
+    width: 400px;
 }

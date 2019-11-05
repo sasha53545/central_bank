@@ -4,7 +4,7 @@ import css from "./CreateBank.module.css";
 function CreateBank() {
     return (
         <div className={css.form_wrapper}>
-            <form>
+            <form className={css.form}>
                 <div className="form-group row ">
                     <label htmlFor="inputEmail3" className="col-sm-2 col-form-label">БИК: </label>
                     <div className="col-sm-10">

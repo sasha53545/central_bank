@@ -4,8 +4,7 @@
   grid-template-columns: 1fr;
   grid-template-areas:
     "mainNavbar_grid"
-    "mainContent_grid"
-    "mainFooter_grid";
+    "mainContent_grid";
 
   height: 100vh;
 }

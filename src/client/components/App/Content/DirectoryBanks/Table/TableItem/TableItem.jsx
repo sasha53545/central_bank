@@ -1,7 +1,6 @@
 import React from "react";
-import css from "./ListItem.module.css";
 
-function ListItem(props) {
+function TableItem(props) {
     return (
         <tr>
             <th scope="row">{props.indexEl}</th>
@@ -13,4 +12,4 @@ function ListItem(props) {
     );
 }
 
-export default ListItem;
+export default TableItem;
