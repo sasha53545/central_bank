@@ -1,0 +1,5 @@
+.table_wrapper {
+    display: grid;
+    justify-content: center;
+    padding: 200px;
+}

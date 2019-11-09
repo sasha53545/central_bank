@@ -1,0 +1,8 @@
+.app_wrapper {
+  display: grid;
+  grid-template-rows: 55px 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "mainNavbar_grid"
+    "mainContent_grid";
+}

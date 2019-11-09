@@ -1,0 +1,10 @@
+.form_wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 200px;
+    height: 100vh;
+}
+
+.form {
+    width: 400px;
+}
