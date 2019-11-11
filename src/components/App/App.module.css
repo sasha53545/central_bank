@@ -3,6 +3,20 @@
   grid-template-rows: 55px 1fr;
   grid-template-columns: 1fr;
   grid-template-areas:
-    "mainNavbar_grid"
-    "mainContent_grid";
+    "navbar"
+    "main";
+    height: 100vh;
+}
+
+.app_wrapper_content {
+    display: grid;
+    grid-area: main;
+
+    grid-template-rows: 500px;
+    grid-template-columns: 500px;
+    grid-template-areas:
+            "create_bank";
+
+    justify-content: center;
+    align-content: center;
 }

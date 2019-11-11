@@ -1,14 +1,6 @@
 import React from "react";
 import css from "./BanksPage.css";
-import BanksTableItem from "./BanksTable/BanksTableItem";
-import serverDataArray from "../../server/ArrayWithTableItems";
-import Table from "./BanksTable/BanksTable";
-
-let elementsTable = serverDataArray.map(element =>
-    <BanksTableItem indexEl={element.indexEl} name={element.name} bik={element.bik} kor={element.kor}
-                    address={element.address}/>);
-
-let sortElementsTable = elementsTable.sort();
+import BanksTable from "./BanksTable/BanksTable";
 
 class BanksPage extends React.Component {
     constructor(props) {
@@ -21,8 +13,8 @@ class BanksPage extends React.Component {
 
     render() {
         return (
-            <div className={css.table_wrapper}>
-                <Table/>
+            <div className={css.banks_page_wrapper}>
+                <BanksTable/>
             </div>
         );
     }

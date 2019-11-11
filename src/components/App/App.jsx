@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.module.css';
+import css from './App.module.css';
 
 import Navbar from "./Navbar/Navbar";
 import BanksPage from "../BanksPage/BanksPage";
@@ -9,11 +9,11 @@ import {BrowserRouter, Route} from "react-router-dom";
 function App(props) {
   return (
       <BrowserRouter>
-          <div className="app_wrapper">
+          <div className={css.app_wrapper}>
               <Navbar/>
-              <div className="app_wrapper_content">
+              <div className={css.app_wrapper_content}>
                   <Route path='/directoryBanks/list' render={() => <BanksPage/>}/>
-                  <Route path='/createBank' component={CreateBankPage}/>
+                  <Route path='/createBank' render={() => <CreateBankPage/>}/>
               </div>
           </div>
       </BrowserRouter>

@@ -1,31 +1,31 @@
 import React from "react";
-import {BrowserRouter, Route} from "react-router-dom";
 import {NavLink} from "react-router-dom";
 import BanksTableItem from "./BanksTableItem";
-import serverDataArray from "../../../server/ArrayWithTableItems";
+import css from "./BanksTable.module.css"
 
-let elementsTable = serverDataArray.map(element =>
-    <BanksTableItem indexEl={element.indexEl} name={element.name} bik={element.bik} kor={element.kor}
-                    address={element.address}/>);
+class BanksTable extends React.Component {
+    constructor(props) {
+        super(props);
 
-function compare(a, b) {
-    if (a.name < b.name) {
-        return -1;
+
+        this.state = {
+            banks: []
+        };
+
+        this.getData = this.getData.bind(this);
+
+        this.getData();
     }
-    if (a.name > b.name) {
-        return 1;
+
+    getData() {
+        for (let i = 0, len = localStorage.length; i < len; ++i) {
+           this.state.banks.push(localStorage.getItem(localStorage.key(i)));
+        }
     }
-    return 0;
-}
 
-let serverDataArraySort = serverDataArray.sort(compare);
+    render() {
 
-let sortElementsTable = serverDataArraySort.map(element =>
-    <BanksTableItem indexEl={element.indexEl} name={element.name} bik={element.bik} kor={element.kor}
-                    address={element.address}/>);
-
-function Table(props) {
-    return (
+        return (
             <table className="table table-striped table-bordered">
                 <thead>
                 <tr>
@@ -39,10 +39,19 @@ function Table(props) {
                 </tr>
                 </thead>
                 <tbody>
-                    {elementsTable}
+                {this.state.banks.map(item => (
+                    <tr>
+                        <th scope="row">#</th>
+                        <td>{item.bik}</td>
+                        <td>{item.name}</td>
+                        <td>{item.kor}</td>
+                        <td>{item.address}</td>
+                    </tr>
+                ))}
                 </tbody>
             </table>
-    );
+        );
+    }
 }
 
-export default Table;
+export default BanksTable;

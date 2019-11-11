@@ -1,10 +1,6 @@
-.form_wrapper {
-    display: flex;
-    justify-content: center;
-    padding: 200px;
-    height: 100vh;
-}
+.create_bank_page_wrapper {
+    display: grid;
+    grid-area: create_bank;
 
-.form {
-    width: 400px;
+    grid-template-areas: "form";
 }
