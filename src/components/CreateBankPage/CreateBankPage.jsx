@@ -20,8 +20,9 @@ class CreateBankPage extends React.Component {
     }
 
     sendJsonState() {
-        const jsonObj = JSON.stringify(this.state);
-        localStorage.setItem(Date.now(), jsonObj);
+        const banksData = JSON.parse(localStorage.getItem('banks')) || [];
+        banksData.push(this.state);
+        localStorage.setItem('banks', JSON.stringify(banksData));
     }
 
     onChangeBik(event) {

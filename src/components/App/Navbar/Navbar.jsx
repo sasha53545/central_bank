@@ -6,7 +6,7 @@ function Navbar() {
     return (
         <navbar className={css.main_navbar}>
             <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-                <NavLink className="navbar-brand" to="/directoryBanks">Центральный Банк</NavLink>
+                <NavLink className="navbar-brand" to="/directoryBanks/list">Центральный Банк</NavLink>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>

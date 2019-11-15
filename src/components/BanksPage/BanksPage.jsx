@@ -5,10 +5,6 @@ import BanksTable from "./BanksTable/BanksTable";
 class BanksPage extends React.Component {
     constructor(props) {
         super(props);
-
-        this.state = {
-            banks: []
-        }
     }
 
     render() {
