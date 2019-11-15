@@ -4,3 +4,12 @@
 
     grid-template-areas: "form";
 }
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+b {
+    width: 150px;
+}

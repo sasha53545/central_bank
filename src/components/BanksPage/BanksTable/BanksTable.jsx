@@ -45,7 +45,7 @@ class BanksTable extends React.Component {
                     <tbody>
                     {this.state.banks.map(item => (
                         <tr>
-                            <th scope="row"></th>
+                            <th scope="row">{item.number}</th>
                             <td>{item.bik}</td>
                             <td>{item.name}</td>
                             <td>{item.kor}</td>
@@ -54,7 +54,7 @@ class BanksTable extends React.Component {
                     ))}
                     </tbody>
                 </table>
-                <button>Удалить банк</button>
+                <button type="submit" className={"btn btn-primary col-sm-6"} value="Submit">Удалить банк</button>
             </div>
         );
     }

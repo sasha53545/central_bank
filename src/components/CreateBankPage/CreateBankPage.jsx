@@ -6,6 +6,7 @@ class CreateBankPage extends React.Component {
         super(props);
 
         this.state = {
+            number: 1,
             bik: '',
             name: '',
             kor: '',
@@ -23,6 +24,10 @@ class CreateBankPage extends React.Component {
         const banksData = JSON.parse(localStorage.getItem('banks')) || [];
         banksData.push(this.state);
         localStorage.setItem('banks', JSON.stringify(banksData));
+    }
+
+    onChangeNumber(event) {
+        this.setState({number: this.state.number++});
     }
 
     onChangeBik(event) {
@@ -73,11 +78,11 @@ class CreateBankPage extends React.Component {
                                    value={this.state.address} onChange={this.onChangeAddress}/>
                         </div>
                     </div>
-                    <div className="form-group row">
-                        <button type="submit" className="btn btn-primary col-sm-6" value="Submit"
+                    <div className={css.buttons}>
+                        <button type="submit" className={"btn btn-primary col-sm-6" + css.b} value="Submit"
                                 onClick={this.sendJsonState}>Создать
                         </button>
-                        <button type="submit" className="btn btn-primary col-sm-6">Отмена</button>
+                        <button type="submit" className={"btn btn-primary col-sm-6" + css.b}>Отмена</button>
                     </div>
                 </form>
             </div>
